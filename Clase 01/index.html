@@ -1,0 +1,99 @@
+<!-- 
+    Nombre fichero principal: index.html
+    Crear una etiqueta HTML: <etiqueta atributo="valor">Contenido</etiqueta>
+    <etiqueta />
+
+    <h1>Traquea<h1>
+    
+        <h2>Bronquios</h2>
+        <h3>Bronquiolos</h3>
+
+        ...
+    <div>
+    <h> - título y subtítulos
+    <p> - parrafo / texto que no entra dentro de la categoría título o subtítulo aunque sea una sola línea
+    <a> - link (href propiedad específica)
+-----------------------
+   HTML Notas:
+    Hypertext Markup Language: 
+    es un lenguaje de marcado, no de programación porque no cumple con las reglas de los lenguajes de programación.
+
+    ¿Qué significa marcar? los sitios web necesitan ser entendidos o interpretados no sólo por personas, por usuarios, sino también por computadoras, por máquinas, por software. Entonces, a la hora de generar una pieza que, para muchos de nosotros es una pieza gráfica visual, tenemos que pensar que pueda ser entendida por una máquina. Para que la entienda una máquina lo que hacemos es marcar de forma muy técnica las diferentes partes del contenido de una página web. 
+    Las etiquetas son la parte del lenguaje del HTML que van marcando, va etiquetando diferentes partes y conceptos de la página. 
+    ----------------------
+
+    <etiqueta>Contenido</etiqueta>
+    Código mínimo que tiene que tener un archivo HTML
+    El archivo HTML siempre comienza con la etiqueta HTML. 
+
+    <!DOCTYPE html> -> define que vamos a usar html5 que tiene etiquetas más actualizadas
+    <html> -> marca inicio y fin del documento
+        <head> </head> -> info de la pagina (no se ve)
+        <body> </body> -> contenido de la página (se ve)
+    </html>
+
+    <head>
+    <meta charset= “utf-8”> -> encriptación de la página dependiendo del lenguaje de símbolos a leer
+    </head>
+    ----------------------
+
+    Indentación para dar legibilidad
+
+    ----------------------
+    Todas las etiquetas abiertas tienen que ser cerradas.
+    
+    ----------------------
+     ATRIBUTOS UNIVERSALES HTML (TODAS LAS ETIQUETAS)
+        id -> uno sólo por proyecto por etiqueta (casi no se usa)
+        class -> se pueden usar múltiples y se pueden repetir, se utiliza la repetición para setear estilos determinados
+        style -> estilo en línea aplicable sólo a esa etiqueta
+
+        --------------
+        CSS - Cascade stylesheet
+        
+        nombre-de-estilo: valor;
+
+        # -> identifica al id en css // especifidad 100
+        . -> identifica a cualquier clase css // especifidad 10
+        tag -> identifica a cualquier etiqueta // especifidad 1
+
+
+        PRIORIDAD EN BASE AL ORIGEN
+        1º-> cualquier style que se ponga en línea en la etiqueta del html (nada lo supera)
+        2º -> cualquier style que esté en el head
+        3º -> cualquier style que esté en un fichero css importado
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Wikipedia</title>
+    <!-- CSS EN HEAD -->
+    <style>
+        /*MI CSS*/
+    </style>
+</head>
+<body>
+    <h1 class="" id=""  style="">Tiítulo principall de mi página</h1> <!-- solo hay uno en toda la página y es el más importante -->
+    <h2></h2> <!-- substitulos de h2 al h6 -->
+    <p>Soy texto</p>
+    <a>Link</a><a>Link1</a>
+
+    <div class="square">
+
+    </div>
+    <div class="square">
+
+    </div>
+    <div id="square-id"> <!--- kebab-case -> css // snake_case -> css // SNAKE_CASE -> JS // camelCase -> funciones y variables JS // PascalCase -> componentes funcionales de JS -->
+
+    </div>
+    <div style="height: 100px; width: 100px; background-color: black; margin: 10px;"> <!-- CSS EN LÍNEA -->
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* 
+CSS EN FICHERO APARTE (RECOMENDADO)
+
+ESPECIFICIDAD 
+
+etiqueta: 1
+clase: 10
+id: 100
+
+*/
+
+
+#square-id {
+    background-color: green; 
+}
+
+div {
+    background-color: red; 
+}
+
+div {
+    height: 100px; 
+    width: 100px; 
+    background-color: blue; 
+    margin: 10px;
+}
+
+
+
+.square {
+    background-color: aqua; 
+}
