@@ -13,6 +13,23 @@
     <h> - título y subtítulos
     <p> - parrafo / texto que no entra dentro de la categoría título o subtítulo aunque sea una sola línea
     <a> - link (href propiedad específica)
+    <header> -> presentación de la página (suele contener el h1 e incluso el nav y siempre está arriba)
+    <nav> -> contiene los links de navegación interna de la página (no links a lugares externos)
+    <main> -> Contiene la información de la página
+    <footer> -> al pie (agrupa elementos debajo de todo) y suele contener links externos
+    <section> -> secciones
+    <article> -> Se entiende sin contexto de la página, puede tener header, main y footer. // EJ, publicidad, artículos periodísticos. Usado mucho para cards
+    <aside> -> agrupa elementos laterales
+    <div> -> etiqueta contenedora de otras etiquetas / agrupar
+
+    Más Etiquetas (Ninguna de estas etiquetas se utiliza mucho hoy en día)
+    strong -> Negrita semántica (da color pero informa de importancia al navegador)
+    b -> Negrita sólo de estilos
+    em -> Cursiva semántica (da color pero informa de importancia al navegador)
+    i ->  Cursiva sólo de estilos
+    hr -> espacio vertical entre una etiqueta y otra
+    br -> línea divisoria
+
 -----------------------
    HTML Notas:
     Hypertext Markup Language: 
@@ -41,6 +58,9 @@
 
     ----------------------
     Todas las etiquetas abiertas tienen que ser cerradas.
+    Hay etiquetas que se cierran dentro de la misma etiqueta de apertura. 
+    Ejemplo: <br/> o <hr/> -> Estas son etiquetas que no tienen contenido
+    A diferencia de por ejemplo: <p>Contenido</p>
     
     ----------------------
      ATRIBUTOS UNIVERSALES HTML (TODAS LAS ETIQUETAS)
@@ -62,6 +82,9 @@
         1º-> cualquier style que se ponga en línea en la etiqueta del html (nada lo supera)
         2º -> cualquier style que esté en el head
         3º -> cualquier style que esté en un fichero css importado
+
+        -----------------------
+    
 -->
 
 <!DOCTYPE html>
@@ -93,7 +116,12 @@
 
     </div>
     <div style="height: 100px; width: 100px; background-color: black; margin: 10px;"> <!-- CSS EN LÍNEA -->
-
     </div>
+
+
+    <p><strong>Esto</strong>es <b>un</b> texto <em>muy</em> largo como <i>este</i></p>
+    <br/>
+    <hr/>
+   
 </body>
 </html>
