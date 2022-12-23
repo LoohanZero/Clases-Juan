@@ -67,6 +67,7 @@
         id -> uno sólo por proyecto por etiqueta (casi no se usa)
         class -> se pueden usar múltiples y se pueden repetir, se utiliza la repetición para setear estilos determinados
         style -> estilo en línea aplicable sólo a esa etiqueta
+        name -> nombre específico
 
         --------------
         CSS - Cascade stylesheet
@@ -83,8 +84,20 @@
         2º -> cualquier style que esté en el head
         3º -> cualquier style que esté en un fichero css importado
 
-        -----------------------
-    
+        -----------------------  
+        RUTA ABSOLUTA
+        href="https://www.google.com"
+        href="C://Users/Loohan/Desktop/Clases/Juan/Clase 01-02/clase-03.html"
+
+        RUTA RELATIVA
+        href="./clase-03.html"
+        href="../clase-03-afuera.html"
+
+
+        Anchor Tag interno: 
+        Cuando pongo un elemento a con un href="#" local y luego le pongo un elemento anchor para que se desplace internamente hacia allí:
+        Si el elemento no es un <a> debo ponerle un id
+        Si el elemento es un <a> debo ponerle un name
 -->
 
 <!DOCTYPE html>
@@ -104,7 +117,7 @@
     <h1 class="" id=""  style="">Tiítulo principall de mi página</h1> <!-- solo hay uno en toda la página y es el más importante -->
     <h2></h2> <!-- substitulos de h2 al h6 -->
     <p>Soy texto</p>
-    <a>Link</a><a>Link1</a>
+    <a href="#otroabajo">Ir hacia abajo</a>
 
     <div class="square">
 
@@ -122,6 +135,43 @@
     <p><strong>Esto</strong>es <b>un</b> texto <em>muy</em> largo como <i>este</i></p>
     <br/>
     <hr/>
-   
+    <span>Esto es un span</span>
+    <span>Esto es otro span</span>
+
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+
+    <a href="./clase-03.html">Clase 03 Hermano</a> 
+    <a href="../clase-03-afuera.html">Clase 03 Afuera</a> 
+
+    <h2>Listas</h2>
+    <ul class="remove-style">
+        <li>Primero</li>
+        <li>Segundo</li>
+    </ul>
+    <p>---------------------------------</p>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+    </ol>
+
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p>Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <p id="abajo">Quisque id quam ut arcu blandit congue in tempor augue. Sed auctor mauris bibendum vestibulum egestas. <span class="special-text">Etiam convallis purus eget risus porttitor, sed convallis velit dignissim. Curabitur in ultricies nunc. Quisque id tincidunt ligula. Aenean facilisis, tortor ac pretium cursus, velit dolor sagittis est, nec congue erat elit sit amet tellus.</span> Morbi vitae metus in ex vulputate dapibus. Sed fermentum metus quis est tristique, sit amet condimentum ipsum bibendum. Mauris gravida accumsan semper. Quisque quis cursus purus. Nunc eget ante dolor. Suspendisse posuere quis dui ut scelerisque. Nunc ultricies tincidunt fringilla. Suspendisse nec ultrices mauris. Etiam sit amet porttitor ligula. Donec malesuada volutpat facilisis.</p>
+    <a name="otroabajo"></a>
+    
 </body>
 </html>

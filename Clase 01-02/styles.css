@@ -9,6 +9,28 @@ id: 100
 
 */
 
+* {
+    /* 
+      Todos y cada uno de los elementos
+  */  
+      margin: 0;
+      padding: 0;
+}
+
+html, 
+body {
+/* 
+Cuando dos elementos distintos comparten el mismo estilo
+*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: antiquewhite;
+}
 
 #square-id {
     background-color: green; 
@@ -25,8 +47,18 @@ div {
     margin: 10px;
 }
 
-
+p {
+    margin: 10px;
+}
 
 .square {
     background-color: aqua; 
+}
+
+.special-text {
+    font-weight: bold;
+}
+
+.remove-style {
+    list-style: none;
 }
