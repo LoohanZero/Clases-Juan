@@ -30,14 +30,23 @@ html {
 
 body {
     background-color: antiquewhite;
+    /* color: #000000; #FFFFFF  -> muy usado #000 es negro, #FFF es blanco
+    color: rgb(0, 0, 0); -> muy usado rgb(0,0,0) es negro, rgb(255,255,255) es blanco
+    color: hsl(0, 0%, 0%); -> poco usado
+    */
+    color: rgba(0, 0, 0, 0.75); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 #square-id {
-    background-color: green; 
+    background-color: rgba(0, 128, 0, 0.50);
+    opacity: 0.5; 
 }
 
 div {
     background-color: red; 
+    
 }
 
 div {
@@ -45,6 +54,10 @@ div {
     width: 100px; 
     background-color: blue; 
     margin: 10px;
+}
+
+h1 {
+    color: brown;
 }
 
 p {
