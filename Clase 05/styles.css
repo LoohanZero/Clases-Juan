@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.model-box-text {
+    border: 1px solid black;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+}
+
+.square-father {
+    width: fit-content;
+    margin: auto;
+}
+/* margin: 10px -> aplica este valor a todos los lados
+   margin: 10px 15px -> aplica el valor 10px al eje vertical y los 15px al eje horizontal
+   margin: 10px auto -> aplica el valor 10px al eje vertical y con auto mide los valores laterales y se centra con respecto al ancho
+ */
+.square {
+    background-color: aquamarine;
+    border: 3px solid blue;
+    margin: 10px auto;
+    padding: 15px;
+    height: 100px;
+    width: 100px;
+}
+
+.percentage-square {
+    width: 50%;
+    height: 100px;
+    background-color: aquamarine;
+    border: 3px solid blue;
+}
+
+.inline-square {
+    display: inline-block;
+}
+
+/* em -> casi no se usa, es con respecto al padre
+    rem -> se usa mucho, especialmente para fuentes, paddings y margins
+    px -> se usa bastante especialmente para tamaños minimos y maximos
+    % -> se usa bastante, más que nada para divs e imágenes
+ */
+
+.font-em {
+    font-size: 1.5em;
+}
+
+.font-rem {
+    font-size: 1rem;
+}
+
+.image-height {
+    height: 500px;
+}
+
+.image-width {
+    width: 500px;
+}
+
+/* object-fit: cover -> cubre todo el ancho y la altura de la imagen sin importar si parte de la imagen queda fuera
+    object-fit: contain -> prioriza el ancho por sobre el alto para que la imagen se vea bien
+    object-fit: fill -> por defecto. llena el contenedor sin importar si la imagen se deforma
+ */
+.image-height-width {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    object-fit: cover;
+    object-position: 10%;
+}
+
+.image-percentage-container {
+    width: 49%;
+    display: inline-block;
+}
+
+.image-percentage {
+    width: 100%;
+}
