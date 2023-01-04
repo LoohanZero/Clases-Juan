@@ -1,0 +1,38 @@
+<!-- 
+     En elementos padre con hijos: 
+     Si el primer elemento tiene margin-top, colapsan los margenes del hijo y del padre y se aplican los margenes del hijo al padre y se muestra el body
+     Y si el último elemento tiene margin-bottom, pasa lo mismo.
+
+     Cuando hay varios elementos verticales entre sí y aplciamos un margin igual, pensamos que se sumarían los márgenes entre sí pero lo que pasa es que un márgen absorbe al otro y sólo se aplica uno.
+     Cuando aplicamos margenes de distintos tamaños, el que prevalece es el del mayor márgen.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clase 06</title>
+</head>
+<body>
+<!------------------------------------------ SECTION ONE ------------------------------------------->
+<div class="header">
+    <h1 class="title">Clase 06</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rerum ipsam, voluptatum delectus laboriosam quibusdam eaque non dicta eum quam perspiciatis distinctio! Perspiciatis porro consequatur reiciendis molestiae, laboriosam necessitatibus cum?</p>
+</div>
+<div class="main">
+    <div class="square-container">
+    <div class="square big-margin"></div>
+    <div class="square small-margin"></div>
+    </div>
+
+</div>
+
+
+<div class="footer">
+    
+</div>
+</body>
+</html>
