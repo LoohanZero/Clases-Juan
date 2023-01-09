@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* vertical-align solo puede aplicarse a elementos inline o inline-block */
+.text {
+    display: inline-block;
+    margin: 20px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.one { 
+    color: beige;
+    background-color: blue; 
+}
+
+.two {
+    color: black;
+    background-color: red;
+}
+
+.three {
+    color: rgb(10, 10, 2);
+    background-color: rgb(255, 251, 0);
+}
+
+.four {
+    color: rgb(10, 10, 10);
+    background-color: rgb(136, 255, 0);
+}
+
+.five {
+    color: rgb(17, 17, 1);
+    background-color: rgb(255, 115, 0);
+}
+
+/*  overflow: hidden -> borra aquello que sobresale del tamaño que yo le designé a mi contenedor
+    box-shadow: 10px 2px 18px 5px rgba(0,0,0, 0.75);
+    box-shadow: eje-x eje-y difuminado distancia color (con o sin transparencia) */
+
+.img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.img-container {
+    width: 500px;
+    border-radius: 10px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img1 {
+    width: 100%;
+}
