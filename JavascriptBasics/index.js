@@ -48,7 +48,7 @@ const devolverAlgo = (name) => {
     return name;
     //JS NO LO LEE, LA FUNCIONA TERMINA EN EL RETURN
     console.log(cualquierCosa);
-  };
+};
 
 // LLAMAR FUNCIONES - EJECUCION
 mostrarEnConsola();
