@@ -112,16 +112,24 @@ for (let index = 0; index < frutas.length; index++) {
 
 // ---------- SWITCH --------------------
 // STATEMENT - CONDICIONAL ENCADENADO
-const numero = 2;
-
-switch(numero) {
-    case 2: console.log("es par");
+const error = 500; // 500, 404, 400, 532
+// SOLO CASOS DE IGUALDAD
+switch(error) {
+    case 500: console.log("Internal server error");
     break
-    case 1: console.log("es impar")
+    case 404: console.log("PAge not found")
+    break
+    case 400: console.log("Bad Request")
+    default:
+      console.log("network error")
 }
 
-if(numero === 2) {
+if(error === 500) {
   console.log("es par");
-} else if (numero === 1) {
-
+} else if (error === 404) {
+  console.log("es impar")
+}  else if (error === 400) {
+  console.log("es impar")
+} else {
+  console.log("es impar")
 }
